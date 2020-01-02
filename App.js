@@ -138,7 +138,7 @@ class Timerange extends React.Component {
     return    <div className='time_range_box'>
       <div className='container'> 
                   <div className='header_container'> <div className='week_hours'> 星期/时间</div> {hoursColLabel.map((label,i) => <span key={i} className='header'> {label}</span>)}</div>
-                {this.state.data.map((item,index) => <div key={index} className='body_container'> <div className='week'>{item.week}</div> {item.hours.map((hour,i) => <span key={i} className={hour === 1 ? 'hightLight' : ''} onClick={() => this.getValue(item.value,i)} onm></span>)}</div>)}
+                {this.state.data.map((item,index) => <div key={index} className='body_container'> <div className='week'>{item.week}</div> {item.hours.map((hour,i) => <span key={i} className={hour === 1 ? 'hightLight' : ''} onClick={() => this.getValue(item.value,i)}></span>)}</div>)}
               </div>
               <div className='select_time_range'> <span>已选时间段</span> <span onClick={this.resetData} className='tip_reset'>清空</span> </div>
                 
